@@ -1,0 +1,64 @@
+/* Set a static interesting background for the whole page */
+body {
+    background-image: url('assets/img/background.jpg'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #f0f0f0;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+/* Button styling */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 200px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Icon styling for button */
+.btn img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+    }
+}

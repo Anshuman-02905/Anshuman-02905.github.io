@@ -55,10 +55,11 @@
                     <a href="https://drive.google.com/file/d/1xQDcZJ_r8MO63ixruv8P9mK4FDryvk_C/view?usp=sharing" class="btn btn-primary" style="margin-left: 20px;" download>Resume</a>
                 </div>
                 <p class="lead mb-5">
-                    I am passionate about using data to solve real-world problems and uncover valuable insights. 
-                    With a strong understanding of machine learning solutions from end to end, I enjoy working 
-                    on projects that apply advanced analytics and AI to drive innovation and efficiency. 
-                    My goal is to make impactful contributions through data-driven decision-making and intelligent automation.
+                Software Engineer with hands-on experience in building high-performance, concurrent systems and scalable microservices using Go, 
+                gRPC, Redis, and PostgreSQL. Skilled in designing distributed systems, real-time data pipelines, and ETL workflows with a focus on
+                reliability, observability, and efficiency. Experienced in data engineering with Azure Data Factory, Databricks, and Delta Lake, applying 
+                advanced analytics and automation to optimize processes. Passionate about leveraging concurrency, distributed architectures, and data-driven
+                approaches to solve complex real-world problems and deliver impactful solutions.
                 </p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://www.linkedin.com/in/anshuman-mandal-89032b19b/"><i class="fab fa-linkedin-in"></i></a>
@@ -78,14 +79,33 @@
 
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
-                <h3 class="mb-0">Data Analyst</h3>
-                <div class="subheading mb-3">Ernst & Young | Bengaluru</div>
-                <p><strong>Order Management System Development:</strong> Developed and deployed an order management system using <strong>Python</strong>, <strong>SQL</strong>, and <strong>Azure Services</strong> to streamline global operations across European, African, and US time zones for <strong>Unilever</strong>. Utilized <strong>Excel</strong>, <strong>Databricks</strong>, and <strong>Power BI</strong> for <strong>ETL data processing</strong>, creating interactive dashboards and performing analytics for automation and actionable insights. <strong>Impact:</strong> Enhanced operational efficiency by facilitating real-time data processing and visualization, supporting informed decision-making for global teams.</p>
-                <p><strong>Chatbot Performance Optimization:</strong> Resolved over 100 tickets for 40+ chatbots, focusing on stabilizing bot performance and retraining NLP solutions. Improved key metrics, achieving a 15% increase in response accuracy, a 10% reduction in false positives, and a 20% enhancement in response time. <strong>Impact:</strong> Delivered a more reliable and efficient chatbot experience, contributing to improved user satisfaction and operational effectiveness.</p>
-                <p><strong>Leadership in Logistic Automation and API Testing:</strong> Led the development of logistic automation software for Indian clients, enhancing supply chain efficiency. Collaborated with the Splunk dashboard team to support critical deployments, improving operational accuracy. Conducted API testing for the banking sector, using tools like <strong>Postman</strong> and <strong>C#</strong> to ensure system reliability, resulting in improved robustness and customer trust.</p>
+                <h3 class="mb-0">Software Engineer</h3>
+                <div class="subheading mb-3">Celebal Technologies | Jaipur</div>
+                <p><strong>URL Shortening Service:</strong>Built a scalable microservices-based URL shortening platform using Go, gRPC, Redis, and PostgreSQL with CSP principles for safe concurrency. 
+                    Achieved 99.99% SLA with 1M+ daily redirects and <50ms average latency. Designed isolated services for shortening, redirection, and analytics using Go channels to prevent race conditions.
+                    Built an asynchronous analytics pipeline (fan-out/fan-in) and structured logging using channels, improving observability and debugging efficiency by 40%. Implemented Redis-based rate limits, 
+                    Prometheus/Grafana monitoring, and OpenTelemetry tracing, maintaining <300ms shortening latency during peak load with <2s fault recovery.</p>
+                        
+            <p><strong>Request Processing Platform:</strong>Developed a high-performance monolithic request processing system in Go using goroutines, channels, and fan-out/fan-in.
+                Applied the Ward Pattern with heartbeat channels and timeouts to monitor and auto-respawn worker goroutines. Handled 500+ concurrent requests per minute with <250ms response time, 
+                    achieving 99.98% uptime under peak load. Implemented Redis-based per-client rate limiting to prevent overload.</p>
             </div>
             <div class="flex-shrink-0"><span class="text-primary">July 2023 - Present</span></div>
         </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Software Engineer</h3>
+                <div class="subheading mb-3">Ernst & Young | Bengaluru</div>
+                <p>Built scalable ETL pipelines using Azure Data Factory and Databricks, migrating data from 17+ SQL Server systems into ADLS Gen2 following Medallion Architecture. 
+                    Re-engineered 130+ stored procedures into PySpark with SCD Type 1 & 2, window functions, Delta Lake MERGE, partitioning, and watermarking.</p>
+                        
+            <p>Implemented governance and optimization using Unity Catalog for schema/lineage tracking, Spark UI for performance tuning, Delta time travel for auditability, 
+                MoM reconciliation for data validation, and vacuuming to reduce storage footprint.</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">July 2023 - Present</span></div>
+        </div>
+    
 
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">

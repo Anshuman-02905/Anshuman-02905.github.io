@@ -77,21 +77,37 @@
     <div class="resume-section-content">
         <h2 class="mb-5">Experience</h2>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Software Engineer</h3>
-                <div class="subheading mb-3">Celebal Technologies | Jaipur</div>
-                <p><strong>URL Shortening Service:</strong>Built a scalable microservices-based URL shortening platform using Go, gRPC, Redis, and PostgreSQL with CSP principles for safe concurrency. 
-                    Achieved 99.99% SLA with 1M+ daily redirects and <50ms average latency. Designed isolated services for shortening, redirection, and analytics using Go channels to prevent race conditions.
-                    Built an asynchronous analytics pipeline (fan-out/fan-in) and structured logging using channels, improving observability and debugging efficiency by 40%. Implemented Redis-based rate limits, 
-                    Prometheus/Grafana monitoring, and OpenTelemetry tracing, maintaining <300ms shortening latency during peak load with <2s fault recovery.</p>
-                        
-            <p><strong>Request Processing Platform:</strong>Developed a high-performance monolithic request processing system in Go using goroutines, channels, and fan-out/fan-in.
-                Applied the Ward Pattern with heartbeat channels and timeouts to monitor and auto-respawn worker goroutines. Handled 500+ concurrent requests per minute with <250ms response time, 
-                    achieving 99.98% uptime under peak load. Implemented Redis-based per-client rate limiting to prevent overload.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">July 2023 - Present</span></div>
-        </div>
+<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="flex-grow-1">
+        <h3 class="mb-0">Software Engineer</h3>
+        <div class="subheading mb-3">Celebal Technologies | Jaipur</div>
+
+        <p><strong>URL Shortening Service:</strong></p>
+        <ul>
+            <li>Built a scalable microservices-based URL shortening service using Go, gRPC, Redis, and PostgreSQL, adhering to CSP principles for safe concurrency.</li>
+            <li>Achieved 99.99% SLA with 1M+ daily redirects and &lt;50ms average redirect latency via parallel replica resolution using goroutines and select.</li>
+            <li>Designed isolated services for shortening, redirection, and analytics using Go channels to avoid shared memory and race conditions.</li>
+            <li>Built an asynchronous analytics pipeline (fan-out/fan-in) to process clickstream data (geo-IP, user-agent) with minimal I/O blocking.</li>
+            <li>Implemented asynchronous structured logging using channels, improving observability and debugging efficiency by 40%.</li>
+            <li>Enforced Redis-based rate limits per IP/user using TTL and sliding window algorithms.</li>
+            <li>Applied traceable error propagation; integrated Prometheus/Grafana for metrics and OpenTelemetry for tracing; maintained &lt;300ms shortening latency during peak load with &lt;2s fault recovery using auto-healing and cached fallbacks.</li>
+        </ul>
+
+        <p><strong>Request Processing Platform:</strong></p>
+        <ul>
+            <li>Implemented a high-performance monolithic request processing system in Go using goroutines, channels, and fan-out/fan-in, enabling multi-client job submission and parallel task execution.</li>
+            <li>Applied the Ward Pattern with heartbeat channels and timeouts to monitor and auto-respawn worker goroutines, ensuring system resilience.</li>
+            <li>Leveraged fan-out/fan-in with a dynamic worker pool and buffered channels for scalable request queuing and efficient task allocation.</li>
+            <li>Enforced Redis-based per-client rate limiting (100 requests/min) to prevent overload and abuse.</li>
+            <li>Performance: Handled 500+ concurrent requests per minute with &lt;250ms response time; Latency: improved task processing time by 40% using pipelined goroutine architecture; Reliability: achieved 99.98% uptime under simulated peak load conditions.</li>
+        </ul>
+    </div>
+
+    <div class="flex-shrink-0">
+        <span class="text-primary">July 2023 - Present</span>
+    </div>
+</div>
+
 
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
@@ -106,17 +122,22 @@
             <div class="flex-shrink-0"><span class="text-primary">July 2023 - Present</span></div>
         </div>
     
+<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="flex-grow-1">
+        <h3 class="mb-0">Software Engineer</h3>
+        <div class="subheading mb-3">Ernst & Young | Bengaluru</div>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Data Analyst Intern</h3>
-                <div class="subheading mb-3">Garvili | Remote</div>
-                <p>Established scheduled data ingestion pipeline from <strong>MongoDB</strong> and <strong>MySQL</strong> sources into <strong>Google BigQuery</strong> using <strong>Apache Airflow</strong>, enhancing data availability and consistency.</p>
-                <p>Leveraged <strong>Databricks PySpark</strong> for data transformation and analytics, achieving a 30% improvement in data processing speed for real-time insights.</p>
-                <p>Developed KPI dashboards in <strong>Power BI</strong> to track metrics and conducted Category-Wise Sales Analytics with predictive models that improved sales forecast accuracy by 15%.</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">January 2023 - June 2023</span></div>
-        </div>
+        <ul>
+            <li>Built scalable ETL pipelines using Azure Data Factory and Databricks, migrating data from 17+ SQL Server systems into ADLS Gen2 following Medallion Architecture. Re-engineered 130+ stored procedures into PySpark with SCD Type 1 & 2, window functions, Delta Lake MERGE, partitioning, and watermarking.</li>
+            <li>Enabled governance and optimization via Unity Catalog for schema/lineage tracking, Spark UI for performance tuning, Delta time travel for auditability, MoM reconciliation for data validation, and vacuuming to reduce storage footprint.</li>
+        </ul>
+    </div>
+
+    <div class="flex-shrink-0">
+        <span class="text-primary">June 2023 – August 2024</span>
+    </div>
+</div>
+
 
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="flex-grow-1">
